@@ -20,11 +20,11 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Blog from './Pages/Blog';
-import Model from './Pages/Model/Model';
-import Sedan from "./Pages/Model/Sedan";
-import SUV from "./Pages/Model/SUV";
-import AMG from "./Pages/Model/AMG";
-import EQ from "./Pages/Model/EQ";
+import Model from './Pages/Model';
+import Sedan from "./Pages/Sedan";
+import SUV from "./Pages/SUV";
+import AMG from "./Pages/AMG";
+import EQ from "./Pages/EQ";
 
 function App() {
   return (
@@ -36,12 +36,7 @@ function App() {
           flexDirection: "column"
         }}
       >
-        <Header modelPages={[
-          { name: "Sedan", link: "/model/sedan" },
-          { name: "SUV", link: "/model/suv" },
-          { name: "AMG Performance", link: "/model/amg" },
-          { name: "EQ Electric", link: "/model/eq" },
-        ]}/>
+        <Header />
         {/* <Home /> */}
         <div style={{ flex: 1 }}>
           <Routes>
@@ -49,10 +44,10 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/model" element={<Model />} />
-            <Route path="/model/sedan" element={<div>Sedan</div>} />
-            <Route path="/model/suv" element={<div>SUV</div>} />
-            <Route path="/model/amg" element={<div>AMG Performance</div>} />
-            <Route path="/model/eq" element={<div>EQ Electric</div>} />
+            <Route path="/sedan" element={<Sedan />} />
+            <Route path="/suv" element={<SUV />} />
+            <Route path="/amg" element={<AMG />} />
+            <Route path="/eq" element={<EQ />} />
 
             <Route path="/contact" element={<Contact />} />
           </Routes>
