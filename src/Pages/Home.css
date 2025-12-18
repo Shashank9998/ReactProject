@@ -209,7 +209,6 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-/* ================= CONTACT ================= */
 /* ================= CONTACT SECTION ================= */
 .contact-title {
   font-size: 36px;
@@ -267,31 +266,11 @@ body {
   box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
 }
 
-/* Submit button */
-/* .premium-form button {
-  width: 50%;
-  padding: 14px;
-  align-items: center;
-  background: #000;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.35s ease;
-}
 
-.premium-form button:hover {
-  background: #222;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-} */
-/* Center Send Message button */
 .premium-form .send-btn {
   display: block;
-  margin: 20px auto 0 auto; /* 👈 centers horizontally */
-  width: 220px;            /* fixed luxury width */
+  margin: 20px auto 0 auto; 
+  width: 220px;            
   padding: 14px;
   background: #000;
   color: #fff;
